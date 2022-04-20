@@ -1,5 +1,5 @@
 # Sets the base image
-FROM node:14.18.3-alpinr              
+FROM node:14.18.3-alpine              
 RUN mkdir -p /app
 # Sets the working directory in the container
 WORKDIR /app    
