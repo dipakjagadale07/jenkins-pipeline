@@ -8,11 +8,11 @@ node {
       app = docker.build("node-jenkins-test")
       echo 'Build successfull...'
      }
-     stage('Test Image'){
+     /* stage('Test Image'){
        app.inside {
          echo 'echo "TEST PASSED"'
        }
-     }
+     } */
      stage('Push Image'){
        docker.withRegistry('https://registry.hub.docker.com', 'docker') {
        //    app.push("${env.BUILD_NUMBER}")
